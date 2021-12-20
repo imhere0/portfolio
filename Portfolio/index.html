@@ -1,0 +1,252 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>
+          Portfolio
+        </title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel = "stylesheet" href = "./static/style.css">
+      </head>
+    <body>
+      <div class="topnav"  id = "myTopnav">
+        <a  href="#intro" class = "navbar-brand" id = "home">Nishesh Acharya</a>
+        <a href="#projecthead">Projects</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+        <a href = "#education"> Education</a>
+        <a href = "javascript:void(0);" class="icon" onclick="vertical()" id = "icon">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+      <div class = "card"  id = "intro">
+        <img src = "static/nishesh.jpg" alt="Man standing" id="personalphoto" class = "responsive"/>
+        <div class = "card-body">
+            <h1>Nishesh Acharya</h1>          
+        </div>
+        <div class = "card-body" id = "tagline">
+          <h5>Tech Enthusiast. Programmer.
+            <br>
+            Computer Science Student</h5>
+        </div>
+      </div>
+      <div class = "container"  >
+        <div class = "row">
+          <div class = "col-sm-5" id = "about">
+                <h3>About Me</h3>
+                <p id = "aboutme"> I am a third computer science student at Amrit Science Campus. I orginally hail from Dang, Nepal but currently living in Lazimpat, Kathmandu.
+                  I am interested in the art of programming and problem solving, how complex problems of nature and tedious tasks of human societies can so conveniently be
+                  solved using the techniques of computer science.
+                  Besides my studies, I have interests on history, art, literature, movies and philosophy.
+                </p>
+          </div>
+          <div class = "col-sm-5" id = "contact">
+            <h4>Contact me on:</h4>
+            <table>
+              <tr>
+                <td>
+                    <span class="fa fa-phone"></span>  
+                </td>
+                <td>
+                    9863333039
+                </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <a href = "https://github.com/imhere0/" target="blank">
+                  <span class="fa fa-github"></span>
+                </a>    
+              </td>
+              <td>
+                GitHub
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href = "https://www.facebook.com/" target = 'blank'>
+                <span class = "fa fa-facebook"></span>
+                </a>
+              </td>
+              <td>
+                Facebook
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href = "https://www.instagram.com/_nishesh/" target = "blank">
+                <span class = "fa fa-instagram"></span>
+                </a>
+              </td>
+              <td>
+                Instagram
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class = "fa fa-envelope"></span>
+                </a>
+              </td>
+              <td>
+                acharya.98imnishesh@gmail.com
+              </td>
+            </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div id = "projecthead" class = "project"> 
+        <h3> Projects</h3>
+      </div>
+      <div class = "card" id= "projectcard1">
+        <img src =  "./static/auction1.png" alt = "Project 1" id= "projectphoto1" class = "responsive" />
+        <h5 style="text-align: center;"><a href = "https://github.com/imhere0/AuctionServer" target="blank"> Auction</a></h5>
+        <div class = "container">        
+            <div id = "projectdes1">
+              <ul>
+                <li>
+                  Designed and built a server for an eBay like ecommerce site, where one can post 
+                  auction listings and bid for them and comment about them. Winner can also be declared for a particular listing.
+                </li>
+                <li>
+                  Leveraged knowledge in python, Django, Django REST Framework, Django-ORM models.
+                </li>
+                <li>
+                  MySQL is used for handling database and Django Token Authentication is used for authenticating user.
+                </li>
+                <li>
+                  APIs were tested using Postman where user can upload informations about their listing on the database
+                  along with picture of the particular listing, and also enjoy other functionalities like commenting and bidding.
+                </li>
+                <li>
+                  Made a <a href="https://github.com/imhere0/Auction" target ="blank" >similar project</a> but on Django MVT design pattern where one user can post their listings and other can bid 
+                  on them and comment about them and can be declared winner as well.
+                </li>
+              </ul>
+                <div class = "container">
+                    <h6>Languages used in Auction(Using Django-Rest-Framewrok):</h6>
+                      <div class="progress">
+                        <div class="progress-bar bg-success" role="progressbar" style="width:100%">
+                          Python 100%
+                        </div>
+                      </div>
+                      <h6>Languages used in Auction(Using Django-MVT Design Pattern):</h6>
+                      <div class="progress">
+                        <div class="progress-bar bg-success" role="progressbar" style="width:65%">
+                          Python 65%
+                        </div>
+                        <div class="progress-bar progress-bar-warning" role="progressbar" style="width:35%">
+                          HTML/CSS 35%
+                        </div>
+                      </div>
+                  
+                </div>
+                
+            </div>
+
+            <button type="button" class="btn btn-primary mx-auto d-block" id = "button1"  >Read More</button>
+        </div>
+
+      </div>
+      <div class = "card">
+        <img src =  "./static/mail1.png" alt = "Project 2" id= "projectphoto2" class = "responsive" />
+        <h5 style="text-align: center;"> <a href= "https://github.com/imhere0/mail" target="blank">Mail</a></h5>
+        <div class = "container">        
+          <div id = "projectdes2">
+            <ul>
+              <li>
+                Designed and built Single Page Web Application for emailing where user can send to and receive mails from fellow users.
+              </li>
+              <li>
+                Javascript, HTML/CSS was used for scripting and designing frontend that makes API calls to send and receive emails from backend.
+              </li>
+              <li>
+                Leveraged knowledge in Django MVT design pattern for backend.
+              </li>
+            </ul>
+              <div class = "container">
+                  <h6>Languages used in Mail:</h6>
+                    <div class="progress">
+                        <div class="progress-bar bg-success" role="progressbar" style="width:60%">
+                          Python 60%
+                        </div>
+                        <div class="progress-bar bg-warning" role="progressbar" style="width:26%">
+                          Javascript 26%
+                        </div>
+                        <div class="progress-bar progress-bar-warning" role="progressbar" style="width:14%">
+                          HTML/CSS 14%
+                        </div>
+                    </div>
+              </div>
+              
+          </div>
+
+          <button type="button" class="btn btn-primary mx-auto d-block" id = "button2"  >Read More</button>
+        
+
+      </div>
+      
+
+      </div>
+      <div id = "projecthead" class = "project"> 
+         <br>
+         
+      </div>
+      <div class = "container" id = "education">
+        <div class ="row">
+          <div class = "col-sm-5">
+            <h3>Academic Informations</h3>
+            <ul>
+              <li>
+                <b>+2 High School – Science </b>
+                <br>2016-2018
+                <br> Kathmandu Model Secondary School.
+              </li>
+              <li>
+                <b>Bachelor of Science (BSc) – Computer Science and Information Technology </b>
+                <br>2018-Present
+                <br> Tribhuvan University (Amrit Science Campus)
+              </li>
+            </ul>
+          </div>
+          <div class = "col-sm-5">
+            <h3> Relevant Skills</h3>
+            <ul>
+              <li>
+                C/C++
+              </li>
+              <li>
+                HTML/CSS (Bootstrap)
+              </li>
+              <li>
+                Javascript
+              </li>
+              <li>
+                ReactJS
+              </li>
+              <li>
+                Python
+              </li>
+              <li>
+                Django and Django-Rest-Framework
+              </li>
+              <li>
+                SQL
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+      <div class = "footer">
+        <p>
+          &copy; Nishesh Acharya
+        </p>
+      </div>  
+      </div> 
+      <script src = "./static/index.js"></script> 
+        
+    </body>
+</html>
